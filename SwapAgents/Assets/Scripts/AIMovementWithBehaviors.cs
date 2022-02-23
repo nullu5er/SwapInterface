@@ -32,10 +32,11 @@ public class AIMovementWithBehaviors : MonoBehaviour
         //    force = listOfBehaviors[i].GetForce(forceTargets);
         //}
 
+        //testing, run the betweenEnemyPlayer behavior
         force = listOfBehaviors[1].GetForce(forceTargets);
 
-        //force = force * maxSpeed;
-
+        force = force * maxSpeed;
+ 
         rb.AddForce(force);
 
     }
