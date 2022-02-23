@@ -347,8 +347,9 @@ MonoBehaviour:
   bSeeking: 1
   wanderRadius: 30
   jitter: 5
-  gameObjectToDrive: {fileID: 1400798674}
+  gameObjectToDrive: {fileID: 0}
   objectToSwitchTo: {fileID: 5337536268672759753}
+  objectToSwitchToB: {fileID: 1400798674}
   behavior: 0
 --- !u!1001 &1400798673
 PrefabInstance:
@@ -569,6 +570,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce7fec003435be143a623c40916d0381, type: 3}
+--- !u!1 &3745013613856449982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2662976437970034050, guid: ce7fec003435be143a623c40916d0381, type: 3}
+  m_PrefabInstance: {fileID: 3745013613856449981}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3745013613856449983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3745013613856449982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e7ac1ff16f69947bd39e91882c0332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  objectToMove: {fileID: 0}
+  objectToSwitchTo: {fileID: 5337536268672759753}
+  objectToSwitchToB: {fileID: 1400798674}
+  bVal: 1
 --- !u!1001 &5337536268672759752
 PrefabInstance:
   m_ObjectHideFlags: 0
