@@ -14,13 +14,16 @@ public class AIMovement : MonoBehaviour
 
     [SerializeField] GameObject gameObjectToDrive;
     [SerializeField] GameObject objectToSwitchTo;
+    [SerializeField] GameObject objectToSwitchToB;
+
+    bool bVal = false;
 
     private enum Behavior { wander };
 
     // Start is called before the first frame update
     void Start()
     {
-        SwapDriveForGameObject(gameObjectToDrive);
+        SwapDriveForGameObject(objectToSwitchTo);
     }
 
     public void SwapDriveForGameObject(GameObject gameObjectToSwitchTo)
@@ -32,7 +35,19 @@ public class AIMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            if (bVal)
+            {
+                SwapDriveForGameObject(objectToSwitchTo);
+            }
+            else
+            {
+                SwapDriveForGameObject(objectToSwitchToB);
+            }
+            bVal = !bVal;
 
+        }
     }
 
     private void FixedUpdate()
@@ -70,8 +85,9 @@ public class AIMovement : MonoBehaviour
     float ArrivalDistance = 2.0f;
     float ArrivalBehavior()
     {
-        float velocityClamp = Vector3.Distance(transform.position, objectToSeek.transform.position);
-        return (velocityClamp < ArrivalDistance) ? 1.0f : maxSpeed;
+        //float velocityClamp = Vector3.Distance(transform.position, objectToSeek.transform.position);
+        //return (velocityClamp < ArrivalDistance) ? 1.0f : maxSpeed;
+        return 0.0f;
 
     }
 

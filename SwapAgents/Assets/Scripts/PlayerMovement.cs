@@ -9,12 +9,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject objectToMove;
     [SerializeField] GameObject objectToSwitchTo;
     [SerializeField] GameObject objectToSwitchToB;
-    public bool bVal = true;
+    public bool bVal = false;
 
 
     private void Start()
     {
 
+        objectToMove = objectToSwitchTo;
         //objectToMove.GetComponent<Rigidbody>();
     }
 
