@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 7052121460765995732}
   - component: {fileID: 7923715990635802004}
   - component: {fileID: 5978450637873886306}
+  - component: {fileID: 962615865793049876}
   m_Layer: 0
-  m_Name: Mover
+  m_Name: Rogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 04baa8dfb2f21374d823cad072c35839, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -113,3 +114,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &962615865793049876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4121549432132484933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6085231b2198a4fa03b8fc4a7b92ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behaviors:
+  - {fileID: 11400000, guid: c3a7abf32b5be30459a06b855bd6caff, type: 2}
+  - {fileID: 11400000, guid: b35464882af9bdf419865861c4509837, type: 2}
